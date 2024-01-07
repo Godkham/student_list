@@ -10,7 +10,7 @@ var calculate = document.getElementById("calc");
 var textbox = document.getElementById("MyClass");
 var student_birthday = document.getElementById("birthday");
 
-const alertPlaceholder = document.getElementById("alert-wrong-date");
+const alertPlaceholder = document.getElementById("alert-item");
 const appendAlert = (message, type) => {
   const wrapper = document.createElement("div");
   wrapper.innerHTML = [
@@ -169,6 +169,7 @@ function ThemHocSinhVaoLop(entered, newMyClass) {
     newMyClass.push(hsmoi);
     hsmoi = {};
     input.value = "";
+    appendAlert("Đã thêm học sinh thành công", "success");
   } else {
     // alert("Nam sinh khong hop le");
     appendAlert("Năm sinh không hợp lệ", "danger");
@@ -196,7 +197,7 @@ function TextBoxMyClass(newMyClass) {
     //var date = created_time_str2.getDate();
     // var month = created_time_str2.getMonth();
     // var fullyear = created_time_str2.getFullYear();
-    console.log(created_time_str2);
+    // console.log(created_time_str2);
     // console.log(created_time_str);
     // console.log(created_time);
 
