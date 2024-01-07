@@ -85,7 +85,7 @@ function TimDiemLonNhat(myClass) {
     }
   }
   hscodiemlonnhat = myClass[maxindex].name;
-  console.log(myClass[maxindex].name);
+  // console.log(myClass[maxindex].name);
   return diemlonnhat;
 }
 
@@ -100,7 +100,7 @@ function HocSinhCoDiemLonNhat(myClass) {
     }
   }
   hscodiemlonnhat = myClass[maxindex].name;
-  console.log(myClass[maxindex].name);
+  // console.log(myClass[maxindex].name);
   return hscodiemlonnhat;
 }
 
@@ -113,7 +113,7 @@ function TimDiemNhoNhat(myClass) {
       minindex = i;
     }
   }
-  console.log(diemnhonhat);
+  // console.log(diemnhonhat);
   return diemnhonhat;
 }
 
@@ -127,7 +127,7 @@ function HocSinhCoDiemnhoNhat(myClass) {
     }
   }
   hssinhcoDiemnhonhat = myClass[minindex].name;
-  console.log(myClass[minindex].name);
+  // console.log(myClass[minindex].name);
   return hssinhcoDiemnhonhat;
 }
 function onlycapitalizeFirstLetter(string) {
@@ -144,7 +144,7 @@ function onlycapitalizeFirstLetter(string) {
 
   const capitalizedWord = firstLetterCap + remainingLetters;
 
-  console.log(capitalizedWord);
+  // console.log(capitalizedWord);
   return capitalizedWord;
 }
 
@@ -162,9 +162,9 @@ function ThemHocSinhVaoLop(entered, newMyClass) {
       created_time: Date.now(),
       student_birthday: student_birthday.value,
     };
-    console.log(`d:${d}`);
-    console.log(hsmoi);
-    console.log(student_birthday.value);
+    // console.log(`d:${d}`);
+    // console.log(hsmoi);
+    // console.log(student_birthday.value);
     typeof student_birthday.value;
     newMyClass.push(hsmoi);
     hsmoi = {};
@@ -196,7 +196,7 @@ function TextBoxMyClass(newMyClass) {
     //var date = created_time_str2.getDate();
     // var month = created_time_str2.getMonth();
     // var fullyear = created_time_str2.getFullYear();
-    console.log(created_time_str2);
+    // console.log(created_time_str2);
     // console.log(created_time_str);
     // console.log(created_time);
 
