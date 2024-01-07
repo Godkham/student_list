@@ -213,27 +213,27 @@ function TextBoxMyClass(newMyClass) {
   });
   return myStudent;
 }
-var name1 = "pHuc";
-var name2 = "phuc";
-var name3 = "PHUC";
-var name4 = "Phuc";
+// var name1 = "pHuc";
+// var name2 = "phuc";
+// var name3 = "PHUC";
+// var name4 = "Phuc";
 
-// function capitalizeFLetter(hovaten) {
-//   let string = hovaten;
-//   var fixname = string[0].toUpperCase() + string.slice(1);
-//   console.log(fixname);
-// }
+// // function capitalizeFLetter(hovaten) {
+// //   let string = hovaten;
+// //   var fixname = string[0].toUpperCase() + string.slice(1);
+// //   console.log(fixname);
+// // }
 
-// capitalizeFLetter(phuc);
+// // capitalizeFLetter(phuc);
 
-// function capitalizeFirstLetter(string) {
-//   console.log(string.charAt(0).toUpperCase() + string.slice(1));
-//   return string.charAt(0).toUpperCase() + string.slice(1);
-// }
+// // function capitalizeFirstLetter(string) {
+// //   console.log(string.charAt(0).toUpperCase() + string.slice(1));
+// //   return string.charAt(0).toUpperCase() + string.slice(1);
+// // }
 
-// capitalizeFirstLetter(phuc);
+// // capitalizeFirstLetter(phuc);
 
-onlycapitalizeFirstLetter(name1);
-onlycapitalizeFirstLetter(name2);
-onlycapitalizeFirstLetter(name3);
-onlycapitalizeFirstLetter(name4);
+// onlycapitalizeFirstLetter(name1);
+// onlycapitalizeFirstLetter(name2);
+// onlycapitalizeFirstLetter(name3);
+// onlycapitalizeFirstLetter(name4);
