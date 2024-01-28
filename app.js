@@ -9,11 +9,11 @@ var input = document.getElementById('input1');
 var calculate = document.getElementById('calc');
 var textbox = document.getElementById('MyClass');
 var student_birthday = document.getElementById('birthday');
-var isLogin = Boolean(localStorage.getItem('isLogin'));
+var isLogin = localStorage.getItem('isLogin');
 var content = document.getElementById('content');
 const alertPlaceholder = document.getElementById('alert-item');
 
-if (isLogin) {
+if (isLogin.pars == 'true') {
   content.setAttribute('style', 'display: block');
 } else {
   content.setAttribute('style', 'display: none');
