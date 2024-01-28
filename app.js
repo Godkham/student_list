@@ -13,7 +13,7 @@ var isLogin = localStorage.getItem('isLogin');
 var content = document.getElementById('content');
 const alertPlaceholder = document.getElementById('alert-item');
 
-if (isLogin.pars == 'true') {
+if (isLogin == 'true') {
   content.setAttribute('style', 'display: block');
 } else {
   content.setAttribute('style', 'display: none');
