@@ -27,39 +27,32 @@
         </div>
         <div class="log-form">
             <h2 style="color:white;">login</h2>
-            <form>
-                <h4>Email</h4>
-                <input id="email">
-                <h4>Password</h4>
-                <input id="password" type="password">
-
+            <form id="form">
+                <div class="form-group">
+                    <label for="inputUsername">Username</label>
+                    <input name="username" type="text" class="form-control" placeholder="Username or Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input name="password" type="password" class="form-control" placeholder="Password">
+                </div>
                 <div class="my_item">
                     <p> Remember me?</p>
                     <input type="checkbox">
                 </div>
-
-                <!-- <div class='parent'>
-                    <div class='child'>child 1</div>
-                    <div class='child'>child 2</div>
-                  </div> -->
-
-
-
-                <button id="login" type="submit" class="btn">login</button>
-
+                <div class="loginButton">
+                    <button id="btn" type="button" class="btn btn-primary">LogIn</button>
+                </div>
                 <a class="forgot" href="#">Forgot Username?</a>
-                <!-- <i></i>
-                <i></i>
-                <i></i> -->
                 <div class="my_item">
                     <p>Need an account?</p>
                     <a href="">SIGN UP</a>
                 </div>
-
-
             </form>
         </div>
+
     </div>
+
 
     <script src="login_page.js"></script>
 </body>
