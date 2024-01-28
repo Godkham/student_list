@@ -15,7 +15,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
     <div class="container">
-        <div class="navbar">
+        <div class=" navbar">
             <div class="dropdown">
                 <button class="dropbtn">Menu</button>
                 <div class="dropdown-content">
@@ -37,69 +37,71 @@
                 </div>
             </div> -->
         </div>
-        <div id="alert-item">
-        </div>
-        <div class="container-fluid">
+        <div id="content" style="display: none;">
+            <div id="alert-item">
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <div><span>Enter</span><input type="text" id="input1">
+                            <span>Năm sinh </span><input type="date" id="birthday" name="trip-start" value=""
+                                min="2000-01-01" max="2024-12-31" />
+                            <button type="button" id="Add" class="btn btn-success">Add</button></div>
+                    </div>
+                    <div class="col-4">Hướng dẫn
+                        <p>Mẫu nhận thông tin học sinh: số báo danh, Tên, Điểm trung bình năm học trước</p>
+                        <p>Bước 2:Chọn năm sinh của học sinh và bấm add</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="calc" class="btn btn-primary">Kết quả</button>
             <div class="row">
-                <div class="col-8">
-                    <div><span>Enter</span><input type="text" id="input1">
-                        <span>Năm sinh </span><input type="date" id="birthday" name="trip-start" value=""
-                            min="2000-01-01" max="2024-12-31" />
-                        <button type="button" id="Add" class="btn btn-success">Add</button></div>
+                <div class="col-2">
+                    <label for="story">Students list:</label>
                 </div>
-                <div class="col-4">Hướng dẫn
-                    <p>Mẫu nhận thông tin học sinh: số báo danh, Tên, Điểm trung bình năm học trước</p>
-                    <p>Bước 2:Chọn năm sinh của học sinh và bấm add</p>
+                <div class="col-10"><textarea id="MyClass" rows="5" cols="70" readonly="true"></textarea></div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <span>Name</span>
                 </div>
+                <div class="col-10"><textarea type="text" id="kq1" readonly="true" cols="70"></textarea></div>
             </div>
-        </div>
-        <button type="button" id="calc" class="btn btn-primary">Kết quả</button>
-        <div class="row">
-            <div class="col-2">
-                <label for="story">Students list:</label>
+            <div class="row">
+                <div class="col-2">
+                    <span>Mark</span>
+                </div>
+                <div class="col-10"><textarea type="text" id="kq3" readonly="true" cols="70"></textarea></div>
             </div>
-            <div class="col-10"><textarea id="MyClass" rows="5" cols="70" readonly="true"></textarea></div>
-        </div>
-        <div class="row">
-            <div class="col-2">
-                <span>Name</span>
-            </div>
-            <div class="col-10"><textarea type="text" id="kq1" readonly="true" cols="70"></textarea></div>
-        </div>
-        <div class="row">
-            <div class="col-2">
-                <span>Mark</span>
-            </div>
-            <div class="col-10"><textarea type="text" id="kq3" readonly="true" cols="70"></textarea></div>
-        </div>
-        <!-- <div class="row">
+            <!-- <div class="row">
             <div class="col-6">
             </div>
             <div class="col-6"></div>
         </div> -->
-        <div class="row">
-            <div class="col-2">
-                <span>Số học sinh giỏi</span>
+            <div class="row">
+                <div class="col-2">
+                    <span>Số học sinh giỏi</span>
+                </div>
+                <div class="col-10"><textarea type="text" id="kq4" readonly="true" cols="70"></textarea></div>
             </div>
-            <div class="col-10"><textarea type="text" id="kq4" readonly="true" cols="70"></textarea></div>
-        </div>
-        <div class="row">
-            <div class="col-2">
-                <span>Số học sinh trung bình</span>
+            <div class="row">
+                <div class="col-2">
+                    <span>Số học sinh trung bình</span>
+                </div>
+                <div class="col-10"><textarea type="text" id="kq5" readonly="true" cols="70"></textarea></div>
             </div>
-            <div class="col-10"><textarea type="text" id="kq5" readonly="true" cols="70"></textarea></div>
-        </div>
-        <div class="row">
-            <div class="col-2">
-                <span>Điểm lớn nhất</span>
+            <div class="row">
+                <div class="col-2">
+                    <span>Điểm lớn nhất</span>
+                </div>
+                <div class="col-10"><textarea type="text" id="kq6" readonly="true" cols="70"></textarea></div>
             </div>
-            <div class="col-10"><textarea type="text" id="kq6" readonly="true" cols="70"></textarea></div>
-        </div>
-        <div class="row">
-            <div class="col-2">
-                <span>Học sinh có điểm lớn nhất</span>
+            <div class="row">
+                <div class="col-2">
+                    <span>Học sinh có điểm lớn nhất</span>
+                </div>
+                <div class="col-10"><textarea type="text" id="kq7" readonly="true" cols="70"></textarea></div>
             </div>
-            <div class="col-10"><textarea type="text" id="kq7" readonly="true" cols="70"></textarea></div>
         </div>
     </div>
     <script src="app.js"></script>
