@@ -1,35 +1,43 @@
 var myClass = [];
 var newMyClass = [];
-var kq1 = document.getElementById("kq1");
-var kq2 = document.getElementById("kq2");
-var kq3 = document.getElementById("kq3");
-var kq6 = document.getElementById("kq6");
-var addstudent = document.getElementById("Add");
-var input = document.getElementById("input1");
-var calculate = document.getElementById("calc");
-var textbox = document.getElementById("MyClass");
-var student_birthday = document.getElementById("birthday");
+var kq1 = document.getElementById('kq1');
+var kq2 = document.getElementById('kq2');
+var kq3 = document.getElementById('kq3');
+var kq6 = document.getElementById('kq6');
+var addstudent = document.getElementById('Add');
+var input = document.getElementById('input1');
+var calculate = document.getElementById('calc');
+var textbox = document.getElementById('MyClass');
+var student_birthday = document.getElementById('birthday');
+var isLogin = Boolean(localStorage.getItem('isLogin'));
+var content = document.getElementById('content');
+const alertPlaceholder = document.getElementById('alert-item');
 
-const alertPlaceholder = document.getElementById("alert-item");
+if (isLogin) {
+  content.setAttribute('style', 'display: block');
+} else {
+  content.setAttribute('style', 'display: none');
+}
+
 const appendAlert = (message, type) => {
-  const wrapper = document.createElement("div");
+  const wrapper = document.createElement('div');
   wrapper.innerHTML = [
     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
     `   <div>${message}</div>`,
     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    "</div>",
-  ].join("");
+    '</div>',
+  ].join('');
 
   alertPlaceholder.append(wrapper);
 };
 
 // ThemHocSinh("001,peter,8", newMyClass);
-addstudent.addEventListener("click", function () {
+addstudent.addEventListener('click', function () {
   ThemHocSinhVaoLop(GetInput(), newMyClass);
   textbox.value = TextBoxMyClass(newMyClass);
 });
 
-calculate.addEventListener("click", function () {
+calculate.addEventListener('click', function () {
   kq1.value = ListTenHocSinh(newMyClass);
   kq3.value = TinhDiemTrungBinh(newMyClass);
   kq4.value = TinhSoHocSinhGioi(newMyClass, TinhDiemTrungBinh(newMyClass));
@@ -153,7 +161,7 @@ function ThemHocSinhVaoLop(entered, newMyClass) {
   var namsinh = d.getFullYear();
   var a = 2024 - namsinh;
   if (a > 9) {
-    var extracted = entered.split(",");
+    var extracted = entered.split(',');
     var hsmoi = {
       id: extracted[0],
       name: onlycapitalizeFirstLetter(extracted[1]),
@@ -168,11 +176,11 @@ function ThemHocSinhVaoLop(entered, newMyClass) {
     typeof student_birthday.value;
     newMyClass.push(hsmoi);
     hsmoi = {};
-    input.value = "";
-    appendAlert("Đã thêm học sinh thành công", "success");
+    input.value = '';
+    appendAlert('Đã thêm học sinh thành công', 'success');
   } else {
     // alert("Nam sinh khong hop le");
-    appendAlert("Năm sinh không hợp lệ", "danger");
+    appendAlert('Năm sinh không hợp lệ', 'danger');
   }
 }
 function GetInput() {
@@ -191,8 +199,8 @@ function TextBoxMyClass(newMyClass) {
   var myStudent = [];
   newMyClass.forEach((element) => {
     var created_time1 = new Date(element.created_time);
-    var created_time_str = created_time1[Symbol.toPrimitive]("string");
-    var created_time_str2 = created_time_str.split(" ");
+    var created_time_str = created_time1[Symbol.toPrimitive]('string');
+    var created_time_str2 = created_time_str.split(' ');
 
     //var date = created_time_str2.getDate();
     // var month = created_time_str2.getMonth();
